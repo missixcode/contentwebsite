@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Navigation */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background: #121d31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    max-height: 90px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: #333;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.navigation a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+
+.navigation a:hover span,
+.navigation a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+section {
+    height: 2060px;
+    padding-top: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Article Head */
+
+.articlehead {
+    width: 70vw;
+    max-width: 1100px;
+    min-width: 700px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #121d31;
+}
+
+h2 {
+    color: #8A8A8A;
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.articleh3 {
+    color: #8A8A8A;
+    font-size: 1.25rem;
+}
+
+.articleh3 a {
+    color: #121d31;
+    text-decoration: underline;
+}
+
+/* Article Content */
+
+.articlecontent {
+    width: 62vw;
+    min-width: 900px;
+    max-width: 1000px;
+}
+
+
+.articlesubhead {
+    color: #121d31;
+    padding-bottom: 10px;
+}
+
+.advertisement {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    height: 300px;
+}
+
+/* Advertisements */
+
+.boxad {
+    background-color: #121d31;
+    height: 202px;
+    width: 556px;
+    padding: 15px 35px 0px 35px;
+}
+
+.boxlink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.boxlink:hover {
+    color: #FF6F26;
+    transition: .25s;
+}
+
+.author {
+    color: rgb(255,255,255,.7);
+    line-height: 75px;
+}
+
+h3 {
+    line-height: 50px;
+    color: white;
+}
+
+/* Bottom-Page Link */
+
+.bottomlink {
+    height: 250px;
+    padding-top: 90px;
+}
+
+.bottomlink a {
+    padding: 30px 150px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: #121d31;
+    color: white;
+    border-radius: 50px;
+}
+
+.bottomlink a:hover {
+    background-color: #FF6F26;
+    transition: .5s;
+}
+
+/* Footer CSS */
+
+footer {
+    height: 571px;
+    background-color: #121d31;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerheadcontainer {
+    
+    height: 130px;
+    padding-top: 60px;
+}
+
+.footeremailcontainer {
+    height: 50px;
+}
+
+.submitcontainer {
+    height: 100px;
+}
+
+.footeremailhead {
+    font-size: 2.25rem;
+    color: white;
+}
+
+.emailbox {
+    width: 360px;
+    height: 35px;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.submit {
+    width: 360px;
+    height: 35px;
+    background-color: #FF6F26;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+}
+
+.footerline {
+    width: 85vw;
+    height: 1px;
+    background-color: white;
+    min-width: 900px;
+}
+
+.footerlogo a {
+    color: white;
+}
+
+.footernav {
+    display: flex;
+    width: 80vw;
+    height: 260px;
+    padding-top: 20px;
+    justify-content: space-between;
+    min-width: 900px;
+}
+
+table {
+    width: 45vw;
+    min-width: 550px;
+    height: 150px;
+}
+
+table a {
+    color: white;
+}
+
+th {
+    text-align: start;
+    font-size: 1.35rem;
+}
+
+td {
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footercopyright {
+    height: 30px;
+    background-color: #FF6F26;
+    color: #121d31;
+    width: 100%;
+    text-align: center;
+    font-size: .75rem;
+    padding-top: 6px;
+    font-weight: 600;
+}
+
+.footercopyright a {
+    color: #121d31;
+    text-decoration: underline;
+}
+
